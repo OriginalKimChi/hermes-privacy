@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Hermes Personal Digest</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; max-width: 760px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #6ca8ff; } }
+  h1 { font-size: 1.8rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #8883; padding-bottom: .3rem; }
+  .updated { color: #8a8a8a; font-size: .9rem; margin-bottom: 2rem; }
+  code { background: #8881; padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
+  ul { padding-left: 1.3rem; }
+  footer { margin-top: 3rem; font-size: .85rem; color: #8a8a8a; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — Hermes Personal Digest</h1>
+<p class="updated">Last updated: 2026-05-20</p>
+
+<p>This application (&ldquo;the App&rdquo;) is a single-user, personal automation tool
+operated by its owner for private research and personal information digests. This
+policy explains what the App does with data.</p>
+
+<h2>Who this is for</h2>
+<p>The App is used solely by its owner. It is not a public product and has no other end users.</p>
+
+<h2>What data the App accesses</h2>
+<p>Using the Meta Threads API, the App reads <strong>public</strong> content returned by the
+Threads keyword search endpoint, limited to the following fields:
+<code>id</code>, <code>text</code>, <code>permalink</code>, <code>timestamp</code>, and <code>username</code>.</p>
+<p>The App does <strong>not</strong> collect private messages, contact lists, email addresses,
+passwords, payment information, or any sensitive personal data.</p>
+
+<h2>How the data is used</h2>
+<ul>
+  <li>Public posts matching a small fixed set of topic keywords are retrieved on a schedule.</li>
+  <li>Results are deduplicated and summarized into a short text digest.</li>
+  <li>The digest is delivered <strong>only</strong> to the owner's own private messaging channel (Telegram).</li>
+</ul>
+
+<h2>Data retention and sharing</h2>
+<ul>
+  <li>Retrieved posts are processed transiently to generate the digest and are <strong>not</strong>
+      retained beyond the run, except for an optional private archive in the owner's personal
+      notes, accessible only to the owner.</li>
+  <li>The App does <strong>not</strong> sell, rent, or share any data with third parties.</li>
+  <li>The App does <strong>not</strong> use the data for advertising or profiling.</li>
+</ul>
+
+<h2>Data deletion</h2>
+<p>Because no third-party user data is stored, there is no shared dataset to delete. The owner
+can remove the local archive and revoke the App's access token at any time via the Meta App Dashboard.</p>
+
+<h2>Security</h2>
+<p>Access tokens and credentials are stored in environment configuration on a private server
+reachable only over the owner's private network (Tailscale).</p>
+
+<h2>Compliance</h2>
+<p>The App respects the Threads API rate limits and the Meta Platform Terms.</p>
+
+<h2>Contact</h2>
+<p>Owner: junghwan_tata<br>Email: <a href="mailto:sandobbypark@gmail.com">sandobbypark@gmail.com</a></p>
+
+<footer>This page is the public privacy policy for a personal Threads API application.</footer>
+</body>
+</html>
